@@ -1,0 +1,13 @@
+---
+# Change MOTD
+- name: Change Message of the Day
+  copy:
+    content: " \n"
+    dest: /etc/motd
+
+- name: Disable default motd
+  file:
+    dest: "/etc/update-motd.d/"
+    mode: "u-x,g-x,o-x"
+    state: directory
+    recurse: yes

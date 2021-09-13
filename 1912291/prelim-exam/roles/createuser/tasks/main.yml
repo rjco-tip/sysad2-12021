@@ -1,0 +1,7 @@
+---
+# Create a user
+- name: Create a user
+  user:
+    name: qrjtco
+    comment: Raymond Co
+    shell: /bin/bash
