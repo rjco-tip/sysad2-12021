@@ -1,0 +1,17 @@
+---
+# tasks file for Centos-dhcpd
+- name: Adding prometheus repository
+  copy:
+    src: prometheus.repo
+    dest: /etc/yum.repos.d/
+
+- name: Installing Prometheus
+  yum:
+    name: prometheus2
+    state: latest
+    update_cache: yes
+
+- name: Starting Prometheus
+  service:
+    name: Prometheus
+    state: started

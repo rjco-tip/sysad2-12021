@@ -1,0 +1,12 @@
+---
+# tasks file for Debian-dhcpd
+- name: Installing Prometheus
+  apt:
+    name: prometheus2
+    state: latest
+    update_cache: yes
+
+- name: Starting Prometheus
+  service:
+    name: Prometheus
+    state: started

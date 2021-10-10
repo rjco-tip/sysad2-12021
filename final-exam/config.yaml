@@ -1,0 +1,17 @@
+###git clone prelim
+prelim_exam: https://github.com/rjco-tip/prelim_special.git
+
+username: rjco-tip
+
+writeable_chroot: allow_writeable_chroot=YES
+
+
+ftp_config: "allow_writeable_chroot=YES\npasv_min_port=30000\npasv_max_port=31000\nuserlist_file=/etc/vsftpd/user_list\nuserlist_deny=NO"
+
+ftp_debian: "pasv_enable=Yes\npasv_min_port=10000\npasv_max_port=10100\nallow_writeable_chroot=YES\nssl_tlsv1=YES\nssl_sslv2=NO\nssl_sslv3=NO"
+
+user: ftpuser
+
+ftp_pass: $6$TpBKKiS1bmWM5Jwt$3BI23/Ifg7E4n4iBXoM46WmoT4aLLbwApmQLHH5zp8qaerkL1QhGSj/n/DUk.HKKiOLS7uoS9Zg17e8Gc5F2j
+
+
